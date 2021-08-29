@@ -11,3 +11,200 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* .App {
+  text-align: center;
+} */
+:root {
+  --primary-purple: #321652;
+  --white: #ffffff;
+  --primary-warn: #ff4c4c;
+  --primary-light-purple: #9176af;
+  --text-light: #FDFDFD;
+  --primary-text-light: #9989AA;
+}
+
+/*common style*/
+.btn {
+  align-items: center;
+  display: flex;
+  height: 49px;
+  box-shadow: 1px 0px 38px rgb(207 173 243 / 44%);
+  border-radius: 4px;
+  font-style: italic;
+  font-weight: 500;
+  padding: 0px 20px;
+  font-size: 18px;
+  font-family: 'Poppins';
+}
+.left-panel,
+.right-panel {
+  border-top: 1px dashed var(--primary-light-purple);
+  border-bottom: 1px dashed var(--primary-light-purple);
+}
+
+/* @media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+} */
+
+/* @keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+ .header {
+  height: 24em;
+  background-color: var(--primary-purple);
+  display: flex;
+  padding: 35px 0px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.rocket{
+  position: absolute;
+    top: 0;
+    right: 5%;
+}
+.left-panel {
+  padding: 0px 10%;
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+.bold-orderNow {
+  font-style: normal;
+  font-weight: 700;
+}
+
+.primary-btn {
+  background: var(--white);
+  color: var(--primary-purple);
+}
+.primary-dark-btn {
+  color: var(--white);
+  background: var(--primary-purple);
+}
+.btn-wrapper {
+  padding: 18px 0px;
+  border-top: 1px dashed white;
+  margin: 30px 0px;
+}
+.catalogue-banner {
+  /* height: 148px; */
+  text-align: center;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 120, 91, 0.3) 0%,
+    rgba(119, 0, 255, 0.3) 100%
+  );
+  padding: 30px 0px;
+  font-style: italic;
+  font-size: 42px;
+  letter-spacing: -0.05em;
+  font-family: "Poppins";
+  color: var(--primary-purple);
+}
+.month-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  border-bottom: 1px dashed var(--primary-purple);
+  margin: 5px;
+}
+.month {
+  margin: 22px 0px;
+  /* position: relative; */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-size: 96px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  background-image: linear-gradient(
+    180deg,
+    rgba(119, 0, 255, 0.2) 25.52%,
+    rgba(255, 120, 91, 0.2) 68.23%
+  );
+}
+.month-subtitle {
+  font-family: "Spartan";
+  font-style: normal;
+  font-style: italic;
+  font-size: 36px;
+  letter-spacing: -0.05em;
+  color: #321652;
+  /*remove later*/
+  /* position: absolute;
+    left: 32%;
+    top: 98%; */
+}
+.product-wrapper {
+  margin: 0% 20%;
+  color: #321652;
+}
+.categoryName {
+  font-family: "Spartan";
+  margin-bottom: 10px;
+  font-size: 28px;
+  letter-spacing: -0.05em;
+}
+.description {
+  font-size: 14px;
+  font-family: "Roboto Condensed";
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.product-details{
+  display: flex;
+  justify-content: space-around;
+  font-family: "Spartan";
+  font-size: 20px;
+  letter-spacing: -0.05em;
+  align-items:center;
+  width:50%
+
+}
+.details{
+  display: flex;
+  flex-wrap:wrap; 
+  margin-top: 5%; 
+}
+ .productName{
+  padding: 10px 5px;
+  width:50%;
+ }
+ .product-price{
+  font-size: 12px;
+  color:var(--primary-text-light);
+  text-decoration-line: line-through;
+ }
+ .favorite{
+   background-color:var(--primary-warn);
+   border-radius: 5px;
+   color:white;
+ }
+ footer{
+   background-color: var(--primary-purple);
+   border-bottom: 13px solid var(--primary-light-purple);
+   display: flex;
+   justify-content:space-around;
+   align-items:center;
+   color: var(--text-light);
+   margin-top: 10%;
+ } 
+ .footer-text{
+  font-family: Spartan;
+  font-size: 20px;
+  letter-spacing: -0.05em;
+  font-style: italic;
+ }
